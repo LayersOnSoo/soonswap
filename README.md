@@ -1,4 +1,4 @@
-# OpenBook V2
+# SoonSwap
 
 A central-limit order-book program based on [Mango V4](https://github.com/blockworks-foundation/mango-v4) and the [previous OpenBook program](https://github.com/openbook-dex/program) (which was a fork of [Serum](https://github.com/project-serum/serum-dex)).
 
@@ -25,9 +25,8 @@ available under GPL.
 
 | tag  | network | program ID                                  |
 | ---- | ------- | ------------------------------------------- |
-| v1.7 | mainnet | opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb |
-| v1.7 | devnet  | opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb |
-| v1.7 | testnet | opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb |
+| v1.7 | devnet  | 5xYnmEnQWYAfcGoUUWeDcpF5XKMDpeXvuxnNgaBuLCPA |
+| v1.7 | testnet | 5xYnmEnQWYAfcGoUUWeDcpF5XKMDpeXvuxnNgaBuLCPA | 
 
 ## Building & testing
 
@@ -45,7 +44,7 @@ Before you can build the program, you will first need to install the following:
 To install the repo, run:
 
 ```bash
-git clone https://github.com/openbook-dex/openbook-v2.git --recursive
+git clone https://github.com/LayersOnSoo/soonswap.git --recursive
 ```
 
 The recursive flag ensures that you receive all of the submodules. If you have already cloned without passing in this flag, you can run:
@@ -107,7 +106,7 @@ yarn build
 ### TS Testing
 
 ```bash
-export SOL_RPC_URL=https://a.b.c
+export SOON_RPC_URL=https://rpc.testnet.soo.network/rpc
 export KEYPAIR="[1,2,3,4,...]"
 yarn ts/client/src/test/market.ts
 yarn ts/client/src/test/openOrders.ts
